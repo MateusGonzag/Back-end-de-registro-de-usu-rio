@@ -12,7 +12,7 @@ const app: Express = express()
 
 app.use(express.json())
 
-app.use("/user", userRoutes)
+app.use("/auth", userRoutes)
 
 app.listen(port, () => {
   console.log(`Server express init on: ${port}`)
